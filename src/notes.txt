@@ -1,0 +1,22 @@
+Library MAnagement---- MVC Architecture
+
+
+- user client based application
+Roles
+
+student 
+employee
+Admin 
+
+
+Module  7
+
+student, employee ---> Sign in / up
+Books MAnagement
+Borrow and Returns 
+Payments
+Dashboard --- Admin
+Notifiaction
+Complaints
+
+
