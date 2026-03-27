@@ -22,7 +22,6 @@ if(!name || !dept || !email || !regno || !password){
 }
 
 
-
 const existing=await student.findOne({phone:phone})
 
 if(existing){
@@ -30,7 +29,6 @@ if(existing){
 }
 
 const hashedpassword = await bcrypt.hash(password,10);
-
 
 const data=new student({
 name,
@@ -48,7 +46,6 @@ res.status(200).json({success:true,message:"Student data Created Successfully",r
 
 } catch (error) {
    //Unexcepted
-   console.log(error)
     res.status(500).json({success:false,message:"Internal Server Error",error:error})
 
 }
