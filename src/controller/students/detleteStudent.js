@@ -5,6 +5,11 @@ try {
     
 const{id}=req.params;
 
+
+if(!id){
+  return  res.status(200).json({success:true,message:" ID is required "});
+}
+
 const deleteditem=await student.findByIdAndDelete(id);
 
 if(!deleteditem){
