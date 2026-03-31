@@ -14,6 +14,7 @@ const studentSchema=mongoose.Schema({
     dob:{type:Date,default:null},
     email:{type:String,required:true},
     password:{type:String,required:true},
+    isverified:{type:Boolean,default:false},
     limit:{type:Number,default:3} 
 
 
